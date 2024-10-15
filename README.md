@@ -1,2 +1,2 @@
 # Computational-Physics
-Projects did in university in computational phyics module.
+Projects did in university in computational physics module.
