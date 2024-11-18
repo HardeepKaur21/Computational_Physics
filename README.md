@@ -28,3 +28,8 @@ Exercise 1.7 Type in and run the following code:
 Exercise 1.8 Plot the function 𝑓(𝑥) = sin(𝑥) between 𝑥 = 0 and 𝑥 = 2𝜋 with a green dashed line. Label your axes, add gridlines and a legend. Your axes should extend only as far as the plotted data.
 
 ---
+
+Exercise 1.9 Type in and run the following code:
+
+---
+
