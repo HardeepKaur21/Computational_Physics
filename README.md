@@ -1,4 +1,4 @@
-# Computational-Physics
+# Computational Physics
 Projects done in university in computational physics module. The instructions are detailed below:
 
 Exercise 1.2 Type in the program above (don’t worry yet about the details), save it as a Python file (text file with a .py extension), run it and check that it works. (The button with the green triangle runs the current Python file, or else you can type run filename.py in the IPython command line.) 
@@ -30,6 +30,12 @@ Exercise 1.8 Plot the function 𝑓(𝑥) = sin(𝑥) between 𝑥 = 0 and 𝑥 
 ---
 
 Exercise 1.9 Type in and run the following code:
+
+---
+
+Exercise P1.1
+Write a program to plot the trajectory of a projectile thrown from the surface of the Earth.
+The user should be allowed to specify the initial velocity, launch angle and time interval
 
 ---
 
