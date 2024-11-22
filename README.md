@@ -50,21 +50,13 @@ Exercise 2.2
 Write a program to calculate the derivative of a function (defined in the program) at a point using the 3-point derivative.
 Use it to calculate 
 
-\[
+$$
 \frac{d(\sin x)}{dx} \text{ at } x = \frac{\pi}{4} \, (\text{use } h = 0.01)
-\]
+$$
+
 
 What is the analytical answer?
 
 ---
 
 
-Write a program to calculate the derivative of a function (defined in the program) at a
-point using the 5-point derivative.
-Use it to calculate 
-
-\[
-\frac{d(\sin x)}{dx} \text{ at } x = \frac{\pi}{4} \, (\text{use } h = 0.01)
-\]
-
----
