@@ -48,6 +48,23 @@ The user should be allowed to specify the initial velocity, launch angle and tim
 
 Exercise 2.2 
 Write a program to calculate the derivative of a function (defined in the program) at a point using the 3-point derivative.
-Use it to calculate d(sin(x))/dx at x = π/4 (use h = 0.01).
+Use it to calculate 
+
+\[
+\frac{d(\sin x)}{dx} \text{ at } x = \frac{\pi}{4} \, (\text{use } h = 0.01)
+\]
+
+What is the analytical answer?
+
+---
+
+
+Write a program to calculate the derivative of a function (defined in the program) at a
+point using the 5-point derivative.
+Use it to calculate 
+
+\[
+\frac{d(\sin x)}{dx} \text{ at } x = \frac{\pi}{4} \, (\text{use } h = 0.01)
+\]
 
 ---
