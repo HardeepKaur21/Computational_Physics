@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  2 11:50:43 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 2.2
+
+
+"""
+#import libraries
+import numpy as np
+
+#define function f(x) = sin(x)
+def f(x):
+    return np.sin(x)
+
+#define variables
+x = np.pi/4 
+h = 0.01
+
+#print result
+print((f(x-2*h) - 8*f(x-h) + 8*f(x+h) - f(x+2*h))/(12*h))
