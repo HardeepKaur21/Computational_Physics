@@ -68,3 +68,9 @@ $$
 $$
 
 ---
+
+2.4 Write a program to plot both a function and its derivative (calculated using either the 3-or 5-point formula) over a specified range (you can use sin(𝑥) as an example and define therange in the program). 
+
+---
+
+
