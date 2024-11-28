@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  2 16:12:08 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 2.4
+
+"""
+#import necessary libraries 
+import numpy as np
+import matplotlib.pyplot as plt
+
+#define function f(x) = sin(x)
+def f(x):
+    return np.sin(x)
+
+#define variables
+x = np.linspace(0, 4*np.pi, 200)
+h = 1
+
+#print result
+g = (f(x-2*h) - 8*f(x-h) + 8*f(x+h) - f(x+2*h))/(12*h)
+k = (f(x+h) - f(x-h))/(2*h)
+j = np.zeros(200)
+
+#populate the array with the y values, using the user defined function
+for i in range(199):
+    j[i] =  np.sin(x[i])
+
+#plot the graph 
+plt.plot(x, g, 'k--', label = '(sin(x))’ - 5 point')
+plt.legend()
+plt.plot(x, j, 'b--', label = 'sin(x)')
+plt.legend()
+plt.plot(x, k, 'g--', label = 'sin(x) - 3 point')
+plt.legend()
+plt.xlabel("X")
+plt.ylabel("f(x)")
+plt.grid(True) 
+
+
+plt.show()
