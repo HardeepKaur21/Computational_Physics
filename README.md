@@ -73,4 +73,11 @@ $$
 
 ---
 
+Problem P2.1 Plot sin(𝑥) and 𝑑(sin(𝑥))/d𝑥 in the range [0,4𝜋].
+Plot the error in the 3 point and 5 point derivative of sin(𝑥). (You can find the error because you know what the analytical answer is.)
+Add some random noise to sin(𝑥) and repeat using the 3- and 5-point method.
+Which method is more sensitive to noise? 
+
+
+---
 
