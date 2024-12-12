@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  6 14:05:14 2023
+
+@author: Hardeep Kaur Gill
+
+Problem 2.1
+
+
+"""
+#import necessary libraries 
+import numpy as np
+import matplotlib.pyplot as plt
+from numpy import random as rnd
+
+#define f(x) to be used for calculations
+def f(x):
+    return np.sin(x)
+
+#define r(x) that returns a random number to stimulate noise in calculations
+def r():
+    return rnd.uniform(-error, error)
+
+#----------main code---------------
+
+#define needed variables
+error = 0.05 
+h = 0.05
+N = 100 #number of indices of arrays
+
+#values x axis
+x = np.linspace(0, 4*np.pi, N)
+#values of f(x) = sin(x)
+y = np.zeros(N);
+#values of analytical sin'(x)
+cos = np.zeros(N)
+#array that holds the values for 3 point
+three = np.zeros(N)
+#array that holds the values for 5 point
+five = np.zeros(N)
+#array that holds the error for 3 point
+error3 = np.zeros(N)
+#array that holds the error for 5 point
+error5 = np.zeros(N)
+
+
+#populate y with values
+for i in range(N):
+    y[i] = f(x[i])
+    cos[i] = np.cos(x[i])
+    three[i] = (f(x[i] + h) + r() - f(x[i] - h + r()))/(2*h)
+    five[i] = (f(x[i] + r() - 2*h) - 8*f(x[i] + r() - h) 
+               + 8*f(x[i] + r() + h) - f(x[i] + r() + 2*h)) /(12*h)
+    error3[i] = three[i] - cos[i]
+    error5[i] = five[i] - cos[i]
+
+#create 2 subplots (2 is rows and 1 is columns)
+fig, ax = plt.subplots(2, 1)    
+#plot all evaluated functions in first subplot
+ax[0].plot(x, y, label = 'sin(x)')
+ax[0].plot(x, cos, label = 'd(sin(x)/dx - analytical')
+ax[0].plot(x, three, label = 'd(sin(x)/dx - 3pt')
+ax[0].plot(x, five, label = 'd(sin(x)/dx - 5pt')
+ax[0].legend()
+
+#plot errors made by 3point and 5point in 2nd subplot
+ax[1].plot(x, error3 , label = 'error of 3pt')
+ax[1].plot(x, error5, label = 'error of 5pt')
+ax[1].legend()
+plt.show()
+
+
+#the result shows us how unstable the 5pt calculations is compared to 3pt. 
