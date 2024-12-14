@@ -81,3 +81,13 @@ Which method is more sensitive to noise?
 
 ---
 
+Exercise 3.1
+| x   | f(x) |
+|-----|------|
+| 0.0 | 0.5  |
+| 0.2 | 2.0  |
+| 0.4 | 4.0  |
+| 0.6 | 6.0  |
+| 0.8 | 4.0  |
+Write a program to estimate f(x) on any point in [0,0.8] using all the data points given (global
+interpolation). Plot the points given and your values for f(0.3), f(0.5) & f(0.75). 
