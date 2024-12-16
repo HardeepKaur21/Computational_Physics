@@ -89,6 +89,7 @@ Exercise 3.1
 | 0.4 | 4.0  |
 | 0.6 | 6.0  |
 | 0.8 | 4.0  |
+
 Write a program to estimate f(x) on any point in [0,0.8] using all the data points given (global
 interpolation). Plot the points given and your values for f(0.3), f(0.5) & f(0.75). 
 
@@ -110,4 +111,7 @@ linear interpolation. Plot the data points given along with the values you calcu
 & f(2.25). 
 
 ---
+
+Exerrcise 3.3 
+Extend the exercises above to plot 𝑓(𝑥) for all 𝑥 in range 𝑥<sub>0</sub> − 𝑥<sub>4</sub>. 
 
