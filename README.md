@@ -91,3 +91,23 @@ Exercise 3.1
 | 0.8 | 4.0  |
 Write a program to estimate f(x) on any point in [0,0.8] using all the data points given (global
 interpolation). Plot the points given and your values for f(0.3), f(0.5) & f(0.75). 
+
+---
+
+Exercise 3.2
+The function f(x) is known at the following points
+
+| x   | f(x) |
+|-----|------|
+| 0.0 | 0.0  |
+| 1.0 | 1.0  |
+| 2.0 | 1.0  |
+| 2.5 | 4.0  |
+| 3.0 | 3.0  |
+
+Write a program to estimate a value for f(x) at any point in the interval [0,3] using (local)
+linear interpolation. Plot the data points given along with the values you calculate for f(0.5)
+& f(2.25). 
+
+---
+
