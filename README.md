@@ -112,6 +112,25 @@ linear interpolation. Plot the data points given along with the values you calcu
 
 ---
 
-Exerrcise 3.3 
+Exercise 3.3 
 Extend the exercises above to plot 𝑓(𝑥) for all 𝑥 in range 𝑥<sub>0</sub> − 𝑥<sub>4</sub>. 
+
+---
+
+Exercise 3.4 
+Spline interpolations, which fit piecewise polynomials that have a smooth slope
+everywhere, are often preferable to local or global interpolation. Polynomials of order 3 or
+more can be used; cubic splines are the most widely used. The SciPy package in Python has
+methods that can be used for spline interpolation. In a two-step process
+interpolate.splrep(xarray,yarray) returns a tuple (let’s call it tck) that
+contains the spline coefficients and then interpolate.splev(xval,tck) uses this
+interpolation to find the value corresponding to xval.
+Use cubic spline interpolation to estimate 𝑓(𝑥) in [0, 1.4] if the function is known at the
+following points
+              𝑥 = [ 0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4]
+              𝑓(𝑥) = [ 0.5, 2.0, 4.0, 6.0, 4.0, 4.0, 5.2, 0]
+Plot your interpolation on [0,1.4]. Indicate on your plot 𝑓(𝑥) for 𝑥 = 0.3, 0.5, 0.9. 
+
+---
+
 
