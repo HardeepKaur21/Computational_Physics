@@ -126,11 +126,16 @@ interpolate.splrep(xarray,yarray) returns a tuple (let’s call it tck) that
 contains the spline coefficients and then interpolate.splev(xval,tck) uses this
 interpolation to find the value corresponding to xval.
 Use cubic spline interpolation to estimate 𝑓(𝑥) in [0, 1.4] if the function is known at the
-following points
+following points  
+
+<p alingn = "center">
               𝑥 = [ 0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4]
               𝑓(𝑥) = [ 0.5, 2.0, 4.0, 6.0, 4.0, 4.0, 5.2, 0]
+</p>
 Plot your interpolation on [0,1.4]. Indicate on your plot 𝑓(𝑥) for 𝑥 = 0.3, 0.5, 0.9. 
 
 ---
 
+Exercise 3.5  
 
+Compare cubic spline and global interpolation for the data points in 3.4 above. 
