@@ -1,7 +1,7 @@
 # Computational Physics
 Projects done in university in computational physics module. The instructions are detailed below: (they get progressively harder!)
 
-<b>Exercise 1.2</b>   
+<b>Exercihttps://github.com/HardeepKaur21/Computational_Physics/issuesse 1.2</b>   
 Type in the program above (don’t worry yet about the details), save it as a Python file (text file with a .py extension), run it and check that it works. (The button with the green triangle runs the current Python file, or else you can type run filename.py in the IPython command line.) 
 
 ---
@@ -155,4 +155,13 @@ Compare cubic spline and global interpolation for the data points in 3.4 above.
 <b>Exercse 4.1</b>  
 Write a program to integrate a function using the Trapezoidal rule. Comment your code.
 
+--- 
+
+<b>Exercse 4.1</b>  
+What does your program give for ∫ sin(x) dx from 0 to π when 10 steps are used?
+- What is the analytical answer?
+- What is the error for 10, 20 and 100 steps?
+
+
 ---
+
