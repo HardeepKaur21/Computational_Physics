@@ -157,7 +157,7 @@ Write a program to integrate a function using the Trapezoidal rule. Comment your
 
 --- 
 
-<b>Exercse 4.1</b>  
+<b>Exercse 4.2</b>  
 What does your program give for ∫ sin(x) dx from 0 to π when 10 steps are used?
 - What is the analytical answer?
 - What is the error for 10, 20 and 100 steps?
@@ -165,3 +165,8 @@ What does your program give for ∫ sin(x) dx from 0 to π when 10 steps are use
 
 ---
 
+<b>Exercse 4.3</b>  
+Write a program to integrate a function using Simpson's rule.
+Comment your code. 
+
+---
