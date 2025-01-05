@@ -170,3 +170,11 @@ Write a program to integrate a function using Simpson's rule.
 Comment your code. 
 
 ---
+
+<b>Exercse 4.4</b>  
+What is the error in the integral 
+
+∫ from 0 to π [sin(x) dx]
+
+for 10, 20, and 100 steps (using Simpson's rule)?  
+Compare with the corresponding results using the Trapezoidal rule.
