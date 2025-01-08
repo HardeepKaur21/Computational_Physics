@@ -178,3 +178,15 @@ What is the error in the integral
 
 for 10, 20, and 100 steps (using Simpson's rule)?  
 Compare with the corresponding results using the Trapezoidal rule.
+
+---
+
+<b>Exercse 4.6</b>  
+A very accurate integration method, known as **Gaussian quadrature**, allows us to vary the separation of the points xᵢ at which the function is evaluated. Gaussian quadrature is especially useful when only a small number of sample points can be used. 
+
+Use `scipy.integrate.quadrature()` to integrate the function:
+**f(x) = x⁴ - 2x + 1**
+between **x = 0** and **x = 2**.
+
+(Use online resources to find information on Python commands.)
+
