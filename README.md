@@ -45,7 +45,7 @@ Type in and run the following code:
 
 ---
 
-<b>Problem P1.1</b>  
+<b>Problem 1.1</b>  
 Write a program to plot the trajectory of a projectile thrown from the surface of the Earth.
 The user should be allowed to specify the initial velocity, launch angle and time interval
 
@@ -79,7 +79,7 @@ Write a program to plot both a function and its derivative (calculated using eit
 
 ---
 
-<b>Problem P2.1</b>  
+<b>Problem 2.1</b>  
 Plot sin(𝑥) and 𝑑(sin(𝑥))/d𝑥 in the range [0,4𝜋].
 Plot the error in the 3 point and 5 point derivative of sin(𝑥). (You can find the error because you know what the analytical answer is.)
 Add some random noise to sin(𝑥) and repeat using the 3- and 5-point method.
@@ -197,5 +197,15 @@ Use `scipy.integrate.quadrature()` to integrate the function:
 between **x = 0** and **x = 2**.
 
 (Use online resources to find information on Python commands.)
+
+---
+
+<b>Problem 4.1</b><br>
+Calculate the magnetic field produced by a current in a straight wire 
+
+<img src="https://github.com/HardeepKaur21/Computational_Physics/blob/main/image.png?raw=true" alt="Description" width="500">
+
+Write a program to calculate (& plot) the magnitude of the magnetic field over a range of
+distances from a straight wire of length 2𝐿.
 
 ---
