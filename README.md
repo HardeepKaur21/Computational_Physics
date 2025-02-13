@@ -209,3 +209,14 @@ Write a program to calculate (& plot) the magnitude of the magnetic field over a
 distances from a straight wire of length 2𝐿.
 
 ---
+
+<b>Exercise 5.1</b>  
+Write a program to plot and find the roots of the equation given by
+
+$$ 
+f(x) = x^4 - 19x^3 + 117x^2 - 261x + 162 = 0 
+$$
+
+between user-specified limits. The accuracy can be defined within
+the program. Use the half-interval search method. (𝑓(𝑥) should be defined in a separate
+function)
