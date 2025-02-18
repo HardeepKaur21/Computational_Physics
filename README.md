@@ -220,3 +220,12 @@ $$
 between user-specified limits. The accuracy can be defined within
 the program. Use the half-interval search method. (𝑓(𝑥) should be defined in a separate
 function)
+
+---
+
+<b>Exercise 5.2</b>  
+Write a program that uses the bisection method to find a root of an equation in a userspecified interval. Test the program using the equation
+
+$$
+x^4 - 19x^3 + 117x^2 - 261x + 162 = 0
+$$
