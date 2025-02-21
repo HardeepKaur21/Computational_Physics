@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 27 11:49:10 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 5.3
+
+Newton's Method
+
+"""
+#import required libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+#define the function
+def f(x):
+    return np.sin(x) + 4*(x**2) - 13*x - 5
+
+#define derivative of f(x)
+def tangent(x):
+    return np.cos(x) + 8*x - 13
+
+#array of guesses, each will come up with a different root
+startVals = [1, 4]
+
+#asl user for number of iterations
+n = int(input("Please enter the number of iterations: "))
+
+#loop through the guesses
+for j in range(len(startVals)):
+    #for each guess loop through the iterations
+    for i in range(n):
+        #apply the newton method formula for each guess
+        startVals[j] = startVals[j] - f(startVals[j]) / tangent(startVals[j])
+    #at the end of the iterations, print the root
+    print("Root number" , j+1, "is: ", startVals[j])
+
+
+
+#plot the funcion to help visualise the roots
+xVals = np.linspace(-5, 5, 100)
+yVals = np.array(f(xVals))
+
+zero = np.zeros(100)
+
+plt.plot(xVals, yVals)
+plt.plot(xVals, zero)
