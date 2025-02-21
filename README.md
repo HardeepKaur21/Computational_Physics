@@ -229,3 +229,14 @@ Write a program that uses the bisection method to find a root of an equation in 
 $$
 x^4 - 19x^3 + 117x^2 - 261x + 162 = 0
 $$
+
+---
+
+<b>Exercise 5.3</b>  
+Write a program to graph the function:
+
+$$ f(x) = \sin(x) + 4x^2 - 13x - 5 $$
+
+in the interval $[-5,5]$. Use Newton’s Method to find a root of $f(x) = 0$. Use \( x = 1 \) and \( x = 4 \) as starting values.
+
+---
