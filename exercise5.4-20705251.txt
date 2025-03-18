@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 27 13:02:54 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 5.4 Secant Method
+
+"""
+
+#import required libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+#define the function
+def f(x):
+    return np.sin(x) + 4*(x**2) - 13*x - 5
+
+
+#array of guesses, each will come up with a different root
+x1 = 1
+x2 = 4
+
+#asl user for number of iterations
+n = int(input("Please enter the number of iterations: "))
+
+
+#for each guess loop through the iterations
+for i in range(n):
+    #apply the newton method formula for each guess
+    x1 = x1 - f(x1)*(x2 - x1) / (f(x2) - f(x1))
+    
+#at the end of the iterations, print the root
+print("A root for this function using Secant method is", x1)
+
+
+
+#plot the funcion to help visualise the roots
+xVals = np.linspace(-5, 5, 100)
+yVals = np.array(f(xVals))
+
+zero = np.zeros(100)
+
+plt.plot(xVals, yVals)
+plt.plot(xVals, zero)
