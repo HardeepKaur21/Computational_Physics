@@ -240,3 +240,12 @@ $$ f(x) = \sin(x) + 4x^2 - 13x - 5 $$
 in the interval $[-5,5]$. Use Newton’s Method to find a root of $f(x) = 0$. Use \( x = 1 \) and \( x = 4 \) as starting values.
 
 ---
+<b>Exercise 5.4</b>  
+5.4 Graph the function 
+
+$$
+f(x) = \sin(x) + 4x^2 - 13x - 5
+$$
+
+in the interval $[-5,5]$. 
+Use the Secant Method to find a root of $f(x) = 0$. Use $x = 1, 4$ as starting values.
