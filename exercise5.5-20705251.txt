@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 27 13:09:54 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 5.5 
+
+scipy
+
+"""
+#import required libraries
+import scipy as sc
+#define the function
+def f(x):
+    return x**4 - 19*(x**3) + 117*(x**2) - 261*x + 162
+
+
+#the parameters of fsolve are: f, the function itself and x0, a starting
+#estimate. With x0 = 5 it returns 6 and with x0 = 100 it returns 9
+#Basically, it returns the root closest to x0
+
+#range
+n = 10
+
+#for loop that generates different estimates
+#was designed by having a good idea of what the function looks like and how
+#often the roots occur
+for i in range(0, n, 3):
+    #print the closest root to that estimate
+    print("The root is: ", sc.optimize.fsolve(f, i))
+    
