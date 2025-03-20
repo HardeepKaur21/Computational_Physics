@@ -241,7 +241,7 @@ in the interval $[-5,5]$. Use Newton’s Method to find a root of $f(x) = 0$. Us
 
 ---
 <b>Exercise 5.4</b>  
-5.4 Graph the function 
+Graph the function 
 
 $$
 f(x) = \sin(x) + 4x^2 - 13x - 5
@@ -249,3 +249,14 @@ $$
 
 in the interval $[-5,5]$. 
 Use the Secant Method to find a root of $f(x) = 0$. Use $x = 1, 4$ as starting values.
+
+---
+<b>Exercise 5.5</b>  
+Use `scipy.optimize.fsolve()` to find the roots of the equation
+
+$$
+x^4 - 19x^3 + 117x^2 - 261x + 162 = 0.
+$$
+
+(Use online resources to find information on Python commands.)
+
