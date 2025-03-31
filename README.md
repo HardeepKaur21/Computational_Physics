@@ -1,8 +1,8 @@
 # Computational Physics
 Projects done in university in computational physics module. The instructions are detailed below: (they get progressively harder!)
 
-<b>Exercihttps://github.com/HardeepKaur21/Computational_Physics/issuesse 1.2</b>   
-Type in the program above (don’t worry yet about the details), save it as a Python file (text file with a .py extension), run it and check that it works. (The button with the green triangle runs the current Python file, or else you can type run filename.py in the IPython command line.) 
+<b>Exercise 1.2</b>   
+Type in the program above, save it as a Python file (text file with a .py extension), run it and check that it works. (The button with the green triangle runs the current Python file, or else you can type run filename.py in the IPython command line.) 
 
 ---
 
@@ -259,4 +259,17 @@ x^4 - 19x^3 + 117x^2 - 261x + 162 = 0.
 $$
 
 (Use online resources to find information on Python commands.)
+
+---
+<b>Problem 5.1</b>
+
+Ferromagnetism arises when a collection of electron spins conspire so that all of their magnetic moments point in the same direction giving a total moment that is macroscopic insize. The spins interact with each other in 
+such a way that parallel spins are favoured in a ferromagnet. The interaction is largest for nearest neighbours 
+(𝑧) and falls off rapidly after that.
+
+
+<img width="353" alt="P5.1 image" src="https://github.com/user-attachments/assets/4edb8591-ce66-4497-a956-7100890624c8" />
+
+
+---
 
