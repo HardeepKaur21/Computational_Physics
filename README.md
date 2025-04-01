@@ -203,8 +203,10 @@ between **x = 0** and **x = 2**.
 <b>Problem 4.1</b><br>
 Calculate the magnetic field produced by a current in a straight wire 
 
-<img src="https://github.com/HardeepKaur21/Computational_Physics/blob/main/image.png?raw=true" alt="Description" width="500">
-
+<div align="center">
+  <img width="500" src="https://github.com/HardeepKaur21/Computational_Physics/blob/main/image.png?raw=true" alt="Description">
+</div>
+<br>
 Write a program to calculate (& plot) the magnitude of the magnetic field over a range of
 distances from a straight wire of length 2𝐿.
 
@@ -267,9 +269,24 @@ Ferromagnetism arises when a collection of electron spins conspire so that all o
 such a way that parallel spins are favoured in a ferromagnet. The interaction is largest for nearest neighbours 
 (𝑧) and falls off rapidly after that.
 
+<div align="center">
+  <img width="500" alt="P5.1 image" src="https://github.com/user-attachments/assets/4edb8591-ce66-4497-a956-7100890624c8" />
+</div>
 
-<img width="353" alt="P5.1 image" src="https://github.com/user-attachments/assets/4edb8591-ce66-4497-a956-7100890624c8" />
 
 
 ---
+<b>Exercise 6.1</b>  
+### Euler Method Approximation
 
+Use the **Euler method** to solve the following first-order differential equation over the interval \([0,1]\), with the given initial condition:
+
+$$
+\frac{dy}{dx} = x + y, \quad y(0) = 1
+$$
+
+Plot a graph of your numerical solution and overlay it with the analytical solution:
+
+$$
+y = 2e^x - x - 1
+$$
