@@ -290,3 +290,26 @@ Plot a graph of your numerical solution and overlay it with the analytical solut
 $$
 y = 2e^x - x - 1
 $$
+
+---
+<b>Exercise 6.1</b>  
+Write a program to solve the differential equation:
+
+$$
+\frac{d^2 y}{dt^2} + \frac{k}{m} y = 0
+$$
+
+numerically using **Euler's method** over the interval [0 ≤ t ≤ 20].
+
+Take:
+
+- k/m = 1
+- Initial conditions:
+  <br>
+  <br>
+  <img src="https://latex.codecogs.com/png.image?\dpi{120}&space;\color{White}{y(0)=0,\quad\frac{dy}{dt}(0)=1}" alt="Initial Conditions" width="120"/>
+
+
+Plot a graph of y(t) as a function of t.
+
+
