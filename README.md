@@ -292,7 +292,7 @@ y = 2e^x - x - 1
 $$
 
 ---
-<b>Exercise 6.1</b>  
+<b>Exercise 6.2</b>  
 Write a program to solve the differential equation:
 
 $$
@@ -312,4 +312,18 @@ Take:
 
 Plot a graph of y(t) as a function of t.
 
+---
+<b>Exercise 6.3</b>  
+Solve the differential equation for a simple pendulum:
 
+$$
+\frac{d^2\theta}{dt^2} = -\frac{g}{l} \sin(\theta)
+$$
+
+numerically using Euler's method. Plot both:
+  - θ(t)
+  - dθ/dt(t)  
+on the same plot (choose your own initial values). Also plot the phase-space diagram (dθ/dt vs θ). Now repeat the same simulation using the **Euler-Cromer method**.
+Explain the difference in behavior between the two methods.
+
+---
