@@ -327,3 +327,8 @@ on the same plot (choose your own initial values). Also plot the phase-space dia
 Explain the difference in behavior between the two methods.
 
 ---
+<b>Exercise 6.4</b>  
+Use `scipy.integrate.odeint()` to solve the ODE in Exercise 6.1. Use on-line
+resources for help.
+
+---
