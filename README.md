@@ -332,3 +332,7 @@ Use `scipy.integrate.odeint()` to solve the ODE in Exercise 6.1. Use on-line
 resources for help.
 
 ---
+<b>Problem 6.1</b>
+Add damping (retarding force proportional to velocity) to your pendulum model of 6.3.
+Solve using the Euler-Cromer method and plot a phase space diagram. What happens if you
+start with a large initial (angular) velocity?
