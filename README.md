@@ -336,3 +336,23 @@ resources for help.
 Add damping (retarding force proportional to velocity) to your pendulum model of 6.3.
 Solve using the Euler-Cromer method and plot a phase space diagram. What happens if you
 start with a large initial (angular) velocity?
+
+---
+<b>Exercise 7.1</b>  
+Write a program to solve the differential equation:
+
+$$
+\frac{dy}{dx} = x + y
+$$
+
+on [0,1] using the RK2 and RK4 methods. Take
+
+$$
+y(0) = 1
+$$
+
+Compare your numerical results with the analytical solution:
+
+$$
+y(x) = 2e^x - x - 1
+$$
