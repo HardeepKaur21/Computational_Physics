@@ -356,3 +356,21 @@ Compare your numerical results with the analytical solution:
 $$
 y(x) = 2e^x - x - 1
 $$
+
+---
+<b>Exercise 7.2</b>  
+Use the Runge–Kutta 4 method to obtain solutions to the differential equation:
+
+$$
+\frac{dy}{dt} = g \-\ \frac{k}{m} y
+$$
+
+in the interval $0 <= t <= 10$, with
+
+- m = 1kg
+- g = 9.81 $m/s^2$
+- k = 2
+
+The initial conditions are
+
+$y(0) = 2\ \mathrm{m},\frac{dy}{dt} = 10\ \mathrm{m/s}$
