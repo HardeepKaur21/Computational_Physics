@@ -374,3 +374,18 @@ in the interval $0 <= t <= 10$, with
 The initial conditions are
 
 $y(0) = 2\ \mathrm{m},\frac{dy}{dt} = 10\ \mathrm{m/s}$
+
+---
+<b>Problem 7.1</b>  
+
+Consider the LR circuit below:
+
+![LR circuit diagram](./image7.1.png)
+
+The current in the circuit is described by
+
+$$
+\frac{dI}{dt} = \frac{1}{L}\bigl(V(t) - RI(t)\bigr).
+$$
+
+Use the RK4 method to find how the voltage across the inductor varies as a function of time.
