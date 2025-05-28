@@ -389,3 +389,30 @@ $$
 $$
 
 Use the RK4 method to find how the voltage across the inductor varies as a function of time.
+
+---
+<b>Problem 7.2</b>  
+
+Write a program to solve the Lorenz (coupled differential) equations
+
+$$
+\begin{aligned}
+\frac{dx}{dt} &= \sigma(y - x),\\
+\frac{dy}{dt} &= rx - y - xz,\\
+\frac{dz}{dt} &= xy - bz
+\end{aligned}
+$$
+
+where σ, r and b are constants. Solve them for the case
+
+- σ = 10  
+- r = 28 
+- b = $\frac{8}{3}$  
+
+in the range $0 \le t \le 50$ with the initial conditions
+
+$$
+(x, y, z) = (0, 1, 0).
+$$
+
+Plot y as a function of t and also z as a function of x.
