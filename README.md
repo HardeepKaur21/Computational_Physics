@@ -416,3 +416,7 @@ $$
 $$
 
 Plot y as a function of t and also z as a function of x.
+
+---
+<b>Exercise 8.1</b>  
+Write a program to simulate a 2D random walk starting at the origin. After each step, calculate the distance from the origin R and the number of steps taken up to that point N. Plot R vs $\sqrt{N}$. Is the relation linear? (Note: You can generate random 2D unit steps by choosing separate random values for Δx and Δy in the range $[-\sqrt{2}, \sqrt{2}]$. Although each step size is not exactly 1, it is 1 on average.)
