@@ -380,7 +380,9 @@ $y(0) = 2\ \mathrm{m},\frac{dy}{dt} = 10\ \mathrm{m/s}$
 
 Consider the LR circuit below:
 
-![LR circuit diagram](./image7.1.png)
+<p align="center">
+  <img src="./image_7.1.png" alt="LR circuit diagram" />
+</p>
 
 The current in the circuit is described by
 
