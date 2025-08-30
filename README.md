@@ -422,3 +422,20 @@ Plot y as a function of t and also z as a function of x.
 ---
 <b>Exercise 8.1</b>  
 Write a program to simulate a 2D random walk starting at the origin. After each step, calculate the distance from the origin R and the number of steps taken up to that point N. Plot R vs $\sqrt{N}$. Is the relation linear? (Note: You can generate random 2D unit steps by choosing separate random values for Δx and Δy in the range $[-\sqrt{2}, \sqrt{2}]$. Although each step size is not exactly 1, it is 1 on average.)
+
+---
+<b>Exercise 8.2</b>
+
+Write a program to simulate radioactive decay. Have $N_0$ and $\lambda$ as input parameters.  
+Run the program with some values of $N_0$ ranging from 10 to 1000. Plot the results along with the analytical solution to show the approach to exponential decay for large numbers and the statistical fluctuations for small numbers of nuclei.
+
+**Random Number Generators**
+
+There is no true computer-generated random number. At some point numbers repeat themselves in exactly the same sequence (the generator has a finite period). You also need to check uniformity and correlations between numbers in the sequence.
+
+The most widely known random number generators are based on the linear congruential relationship
+
+$$
+I_{i+1} = (a I_i + c)\bmod(m)
+$$
+
