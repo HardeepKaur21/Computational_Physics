@@ -1,0 +1,58 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec  6 16:26:50 2023
+
+@author: Hardeep Kaur Gill
+
+Exercise 8.3
+
+"""
+
+#import required libraries
+import random as r
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = 65
+c = 319
+m = 65537
+
+def ranGen(I):
+    return  (a*I + c) % m
+
+N = 6000
+
+seq1 = np.zeros(N)
+seq2 = np.zeros(N)
+seq3 = np.zeros(N)
+
+seq4 = np.zeros(N)
+seq5 = np.zeros(N)
+seq6 = np.zeros(N)
+
+#initial values
+seq1[0] = 3
+seq2[0] = 21
+seq3[0] = 45
+
+for i in range(1, N):
+    seq1[i] = ranGen(seq1[i-1])
+    seq2[i] = ranGen(seq2[i-1])
+    seq3[i] = ranGen(seq3[i-1])
+    
+    seq4[i] = r.uniform(a, N)
+    seq5[i] = r.uniform(a, N)
+    seq6[i] = r.uniform(a, N)
+
+
+
+
+fig = plt.figure()
+ax = fig.add_subplot(1, 2, 1, projection='3d')
+ax.scatter(seq1, seq2, seq3, c='r',marker='.')
+
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+ax.scatter(seq4, seq5, seq6, c='b',marker='.')
+
+#seems like Python's random number generator does not have a pattern for the
+#defined range.
