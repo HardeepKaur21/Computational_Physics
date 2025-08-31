@@ -439,3 +439,8 @@ $$
 I_{i+1} = (a I_i + c)\bmod(m)
 $$
 
+---
+<b>Exercise 8.3</b>
+
+Generate three sequences of random numbers using the relationship above (take $a=65$, $c=319$ and $m=65537$). Plot the points in a 3D scatter plot (`ax.scatter(x, y, z, c='r', marker='.')`), where $x$, $y$ and $z$ are the three arrays of random numbers. Can you see any correlations?  
+Compare with Python’s random number generator (`random.uniform(a,b)`).
