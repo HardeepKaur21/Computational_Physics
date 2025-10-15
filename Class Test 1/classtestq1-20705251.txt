@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 10 11:09:36 2023
+
+@author: Hardeep Kaur Gill
+
+Class Test Question1
+
+"""
+#import required libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+#data that was collected
+x = [0.0, 0.5, 1.0, 1.5, 2.5, 3.0, 3.5, 4.0]
+yx = [356.1, 397.1, 423.8, 445.1, 509.9, 572.6, 668.2, 806.6]
+
+#this is function g(x) from the notes that gives the globally interpolated 
+#polynomial xx is x from the formula
+# n is the same as the formula
+def f(xx, n):
+    
+    top = 1 #top of the fraction
+    bottom = 1 #bottom of the fraction
+    interp = 0 #value to be returned
+    
+    #j keeps track of the subscripts changing on the top of the formula
+    #i keeps track of the subscripts changing on the bottom of g(x)
+    for i in range(n):
+        
+        for j in range(n):
+            if j != i: #j == i is not part of g(x)
+                top *= (xx - x[j]) 
+               
+        for j in range(n):
+            if j != i: #j == i is not part of g(x)
+                bottom *= x[i] - x[j]
+                
+        #calculate the interpolation as per g(x)
+        interp += yx[i] * top/bottom
+        
+        #reset values for next calculation
+        top = 1
+        bottom = 1
+        
+    #return interp
+    return interp 
+
+order = 8  #number of ints in array x above
+num = 50  #number of spaces between 2 numbers in linspace
+
+
+xr = np.linspace(x[0], x[-1], num) #x[-1] is the last element of x
+yr = f(xr, order) #f(xx, n) is set as g(x) from the notes so extra points in
+#the funcion can be determined and thus a trendline that goes through all 
+#points is determined
+
+plt.clf() #clears the graph from previous plots
+
+#plot the known points 
+plt.plot(x, yx, 'ro', label = 'measured data')
+
+    
+plt.xlim(x[0], x[-1]) #trims empty space from sides
+plt.grid(which = 'major', color = 'k' , linestyle = ":") #adds grid
+
+#the estimation for the correct point x = 2.0
+plt.plot(2, f(2, order), 'gx', label = 'interpolated value at x = 2.0')
+
+#what was actually recorded
+plt.plot(2, 450.7, 'bo', label = 'measured value at x = 2.0')
+
+#plot the interpolated graph for all points in the interval 
+plt.plot(xr, yr, label = 'global interpolation', linestyle = '--')
+plt.legend(loc = 'best')
+plt.title("Global Interpolation of Collected Data")
+plt.xlabel('x')
+plt.ylabel('y(x)')
+plt.show()
+
+#print on the console
+print("Data recorded during experiment: ", "x = ",  2, ", f(2) = ", 450.7)
+print("Data predicted using interpolation: ","x =",  2, ", f(2) =", f(2, order))
