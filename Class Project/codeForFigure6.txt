@@ -1,0 +1,69 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Dec 19 10:18:10 2023
+
+@author: Hardeep Kaur Gill
+
+EP408 - Project: File 1
+
+
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+#k is the magnitude of the uniform force
+
+#assign constants
+k = 0.03 #[N] , pressure from solar wind
+step = 0.0001
+m = 1 #mass
+
+#declare arrays 
+N = 313000
+t = np.zeros(N)  #time
+r1 = np.zeros(N) #x posiiton
+r2 = np.zeros(N) #y position
+v1 = np.zeros(N) #velocity along x axis 
+v2 = np.zeros(N) # velocity along y axis
+angularM = np.zeros(N) #angular mometum 
+KE = np.zeros(N) #kinetic energy
+
+
+#initial conditions
+t[0] = 0
+r1[0] = 1
+r2[0] = 0
+v1[0] = 0
+v2[0] = 1
+angularM[0] = 1
+ 
+for i in range(1,N):
+    r1[i] = r1[i-1] + v1[i-1]*step
+    
+    r2[i] = r2[i-1] + v2[i-1]*step
+    
+    r = np.sqrt(r1[i-1]**2 + r2[i-1]**2)
+    
+    v1[i] = v1[i-1] + (k - (r1[i]/r**3))*step
+    
+    v2[i] = v2[i-1] - (r2[i]/r**3)  *step
+    t[i] = t[i-1] + step
+    
+# calculate angular momentum at each time step
+for i in range(N):
+    #position along x⋅velocity along y−position along y⋅velocity along x
+    angularM[i] = (r1[i] * v2[i] - r2[i] * v1[i])
+    KE[i] = 0.5 * m * (v1[i]**2 + v2[i]**2)  # KE = 1/2 * m * v^2
+
+
+
+
+#plotting
+plt.plot(r2, v2)
+plt.xlabel('Velocity X component, V1 [m/s^2]')
+plt.ylabel('Velocity Y component, V2 [m/s^2]')
+plt.title('V1 vs V2')
+plt.grid()
+plt.show()
