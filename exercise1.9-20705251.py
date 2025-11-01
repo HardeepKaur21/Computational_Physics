@@ -39,3 +39,4 @@ ax.set_zlabel('z')
 plt.colorbar(c, orientation = 'vertical')
 plt.tight_layout()
 ax.set_title('surface plot with contours', weight = 'bold', size= 18)
+
