@@ -21,14 +21,14 @@ K = 0.03 # Solar wind strength, you need to define this
 D = 1/32 # Time step size
 N = 30000 # Number of iterations, adjust as needed
 
-# Initial conditions
+#initial conditions
 r1 = 1
 r2 = 0
 v1 = 0
 v2 = 1
 t = 0
 
-# Lists to store position data for plotting
+#lists to store position data for plotting
 r1_list = [r1]
 r2_list = [r2]
 
@@ -37,7 +37,7 @@ v1_list = [v1]
 v2_list = [v2]
 
 
-# Initial velocity half-step
+#initial velocity half-step
 r8 = r1**2 + r2**2
 r = np.sqrt(r8)
 r9 = r * r8
@@ -45,23 +45,23 @@ d1 = r8 * D
 v1 = v1 + (K - r1/r9) * d1/2
 v2 = v2 - r2/r9 * d1/2
 
-# Iterative loop
+#iterative loop
 for i in range(1, N):
-    # Half-step estimate of r1, r2
+    #half-step estimate of r1, r2
     r5 = r1 + v1 * d1/2
     r6 = r2 + v2 * d1/2
     r8 = r5**2 + r6**2
     
-    # Full-step calculation of r1, r2
+    #full-step calculation of r1, r2
     d1 = r8 * D
     r1 = r1 + v1 * d1
     r2 = r2 + v2 * d1
     
-    # Store the new positions for plotting
+    #store the new positions for plotting
     r1_list.append(r1)
     r2_list.append(r2)
     
-    # Full-step calculation of v1, v2
+    #full-step calculation of v1, v2
     r8 = r1**2 + r2**2
     r = np.sqrt(r8)
     v1 = v1 + (K * r8 - r1/r) * D
@@ -70,14 +70,12 @@ for i in range(1, N):
     v1_list.append(v1)
     v2_list.append(v2)
     
-    # Step time
     t = t + D
 
 fig, ax = plt.subplots(1, 2)
 
 ax[0].plot(r1_list, r2_list)
 
-# Plotting r1 vs r2
 def update_plot(frame):
     print(frame)
     ax[1].clear()
@@ -91,14 +89,14 @@ def update_plot(frame):
 plt.xlim(-20, 20)
 plt.ylim(-20, 20)
 
-# Create the animation
 animation = FuncAnimation(fig, update_plot, frames=len(r1_list), interval=100)
 
 plt.xlim(-20, 20)
 plt.ylim(-20, 20)
 
-# Save the animation as a GIF file
+#save it
 #animation.save('orbital_path_animation.gif', writer=PillowWriter(fps=15))
 
 # Show the animation
 plt.show()
+
